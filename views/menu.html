@@ -1,0 +1,93 @@
+<!-- <link rel = "stylesheet" href = "style.css">
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1>워크샵-팀3</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">홈으로</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/enter">매물등록</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/list">매매목록</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+
+
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Team9 Bank</h1>
+    </a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="/" class="">Home<br></a></li>
+        <li><a href="about.html" class="">About</a></li>
+        <li><a href="services.html" class="">Services</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+        <li class="dropdown"><a href="/realty"><span>부동산</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="/list">매물 시세</a></li>
+            <li><a href="/enter">매물 등록</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="active">contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <a class="btn-getstarted" href="get-a-quote.html">로그인</a>
+
+  </div>
+</header>
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    var currentUrl = window.location.href;
+    var navLink = document.querySelectorAll('#navmenu ul li a');
+
+    navLink.forEach(function(link){
+      var linkUrl = link.href;
+
+      if(currentUrl === linkUrl){
+        link.classList.add('active');
+      }else{
+        link.classList.remove('active');
+      }
+    });
+  });
+</script>
